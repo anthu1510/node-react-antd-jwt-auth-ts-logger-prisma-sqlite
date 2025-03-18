@@ -1,0 +1,168 @@
+[2025-03-18 20:40:07] INFO: 🚀 Server is running on http://localhost:5000
+[2025-03-18 20:40:22] INFO: 🚀 Server is running on http://localhost:5000
+[2025-03-18 20:41:18] INFO: 🚀 Server is running on http://localhost:5000
+[2025-03-18 20:41:50] INFO: 🚀 Server is running on http://localhost:5000
+[2025-03-18 20:42:12] INFO: 🚀 Server is running on http://localhost:5000
+[2025-03-18 20:44:00] INFO: 🚀 Server is running on http://localhost:5000
+[2025-03-18 20:45:17] INFO: 🚀 Server is running on http://localhost:5000
+[2025-03-18 20:45:24] INFO: login users
+[2025-03-18 20:45:24] INFO: ::ffff:127.0.0.1 - - [18/Mar/2025:15:15:24 +0000] "POST /api/auth/login HTTP/1.1" 200 291 "-" "Keyrunner"
+[2025-03-18 20:46:36] INFO: 🚀 Server is running on http://localhost:5000
+[2025-03-18 20:46:44] INFO: 🚀 Server is running on http://localhost:5000
+[2025-03-18 20:46:54] ERROR: [object Object]
+[2025-03-18 20:46:54] ERROR: Error: email password not matched
+[2025-03-18 20:46:55] INFO: ::ffff:127.0.0.1 - - [18/Mar/2025:15:16:55 +0000] "POST /api/auth/login HTTP/1.1" 500 21 "-" "Keyrunner"
+[2025-03-18 20:50:48] INFO: 🚀 Server is running on http://localhost:5000
+[2025-03-18 20:50:56] INFO: 🚀 Server is running on http://localhost:5000
+[2025-03-18 20:51:03] INFO: 🚀 Server is running on http://localhost:5000
+[2025-03-18 20:52:23] INFO: 🚀 Server is running on http://localhost:5000
+[2025-03-18 20:52:53] INFO: 🚀 Server is running on http://localhost:5000
+[2025-03-18 20:53:12] ERROR: email password not matched
+[2025-03-18 20:53:12] ERROR: Error: email password not matched
+[2025-03-18 20:53:12] INFO: ::ffff:127.0.0.1 - - [18/Mar/2025:15:23:12 +0000] "POST /api/auth/login HTTP/1.1" 500 38 "-" "Keyrunner"
+[2025-03-18 20:53:20] ERROR: email password not matched
+[2025-03-18 20:53:20] ERROR: Error: email password not matched
+[2025-03-18 20:53:20] INFO: ::ffff:127.0.0.1 - - [18/Mar/2025:15:23:20 +0000] "POST /api/auth/login HTTP/1.1" 500 38 "-" "Keyrunner"
+[2025-03-18 20:53:51] INFO: login users
+[2025-03-18 20:53:51] INFO: ::ffff:127.0.0.1 - - [18/Mar/2025:15:23:51 +0000] "POST /api/auth/login HTTP/1.1" 200 291 "-" "Keyrunner"
+[2025-03-18 21:07:15] INFO: ::ffff:127.0.0.1 - - [18/Mar/2025:15:37:15 +0000] "POST /api/auth/create HTTP/1.1" 200 92 "-" "-"
+[2025-03-18 21:07:15] ERROR: email password not matched
+[2025-03-18 21:07:15] ERROR: Error: email password not matched
+[2025-03-18 21:07:15] INFO: ::ffff:127.0.0.1 - - [18/Mar/2025:15:37:15 +0000] "POST /api/auth/login HTTP/1.1" 500 38 "-" "-"
+[2025-03-18 21:07:15] INFO: ::ffff:127.0.0.1 - - [18/Mar/2025:15:37:15 +0000] "GET /api/auth HTTP/1.1" 200 154 "-" "-"
+[2025-03-18 21:08:31] INFO: 🚀 Server is running on http://localhost:5000
+[2025-03-18 21:08:43] INFO: ::ffff:127.0.0.1 - - [18/Mar/2025:15:38:43 +0000] "POST /api/auth/create HTTP/1.1" 200 92 "-" "-"
+[2025-03-18 21:08:43] ERROR: email password not matched
+[2025-03-18 21:08:43] ERROR: Error: email password not matched
+[2025-03-18 21:08:43] INFO: ::ffff:127.0.0.1 - - [18/Mar/2025:15:38:43 +0000] "POST /api/auth/login HTTP/1.1" 500 38 "-" "-"
+[2025-03-18 21:08:44] INFO: ::ffff:127.0.0.1 - - [18/Mar/2025:15:38:44 +0000] "GET /api/auth HTTP/1.1" 200 154 "-" "-"
+[2025-03-18 21:09:47] INFO: ::ffff:127.0.0.1 - - [18/Mar/2025:15:39:47 +0000] "POST /api/auth/create HTTP/1.1" 200 95 "-" "-"
+[2025-03-18 21:09:47] ERROR: email password not matched
+[2025-03-18 21:09:47] ERROR: Error: email password not matched
+[2025-03-18 21:09:47] INFO: ::ffff:127.0.0.1 - - [18/Mar/2025:15:39:47 +0000] "POST /api/auth/login HTTP/1.1" 500 38 "-" "-"
+[2025-03-18 21:09:47] INFO: ::ffff:127.0.0.1 - - [18/Mar/2025:15:39:47 +0000] "GET /api/auth HTTP/1.1" 200 154 "-" "-"
+[2025-03-18 21:10:32] INFO: ::ffff:127.0.0.1 - - [18/Mar/2025:15:40:32 +0000] "POST /api/auth/create HTTP/1.1" 200 95 "-" "-"
+[2025-03-18 21:10:32] ERROR: email password not matched
+[2025-03-18 21:10:32] ERROR: Error: email password not matched
+[2025-03-18 21:10:32] INFO: ::ffff:127.0.0.1 - - [18/Mar/2025:15:40:32 +0000] "POST /api/auth/login HTTP/1.1" 500 38 "-" "-"
+[2025-03-18 21:10:32] INFO: ::ffff:127.0.0.1 - - [18/Mar/2025:15:40:32 +0000] "GET /api/auth HTTP/1.1" 200 154 "-" "-"
+[2025-03-18 21:11:27] INFO: ::ffff:127.0.0.1 - - [18/Mar/2025:15:41:27 +0000] "POST /api/auth/create HTTP/1.1" 200 95 "-" "-"
+[2025-03-18 21:11:27] INFO: ::ffff:127.0.0.1 - - [18/Mar/2025:15:41:27 +0000] "POST /api/auth/create HTTP/1.1" 200 95 "-" "-"
+[2025-03-18 21:11:27] ERROR: email password not matched
+[2025-03-18 21:11:27] ERROR: Error: email password not matched
+[2025-03-18 21:11:27] INFO: ::ffff:127.0.0.1 - - [18/Mar/2025:15:41:27 +0000] "POST /api/auth/login HTTP/1.1" 500 38 "-" "-"
+[2025-03-18 21:11:27] INFO: ::ffff:127.0.0.1 - - [18/Mar/2025:15:41:27 +0000] "GET /api/auth HTTP/1.1" 200 154 "-" "-"
+[2025-03-18 21:14:38] INFO: ::ffff:127.0.0.1 - - [18/Mar/2025:15:44:38 +0000] "POST /api/auth/create HTTP/1.1" 200 95 "-" "-"
+[2025-03-18 21:14:38] INFO: ::ffff:127.0.0.1 - - [18/Mar/2025:15:44:38 +0000] "POST /api/auth/create HTTP/1.1" 200 95 "-" "-"
+[2025-03-18 21:14:38] ERROR: secretOrPrivateKey must have a value
+[2025-03-18 21:14:38] ERROR: Error: secretOrPrivateKey must have a value
+[2025-03-18 21:14:38] INFO: ::ffff:127.0.0.1 - - [18/Mar/2025:15:44:38 +0000] "POST /api/auth/login HTTP/1.1" 500 48 "-" "-"
+[2025-03-18 21:14:38] INFO: ::ffff:127.0.0.1 - - [18/Mar/2025:15:44:38 +0000] "GET /api/auth HTTP/1.1" 200 154 "-" "-"
+[2025-03-18 21:14:58] INFO: ::ffff:127.0.0.1 - - [18/Mar/2025:15:44:58 +0000] "POST /api/auth/create HTTP/1.1" 200 95 "-" "-"
+[2025-03-18 21:14:58] INFO: ::ffff:127.0.0.1 - - [18/Mar/2025:15:44:58 +0000] "POST /api/auth/create HTTP/1.1" 200 95 "-" "-"
+[2025-03-18 21:14:58] ERROR: secretOrPrivateKey must have a value
+[2025-03-18 21:14:58] ERROR: Error: secretOrPrivateKey must have a value
+[2025-03-18 21:14:58] INFO: ::ffff:127.0.0.1 - - [18/Mar/2025:15:44:58 +0000] "POST /api/auth/login HTTP/1.1" 500 48 "-" "-"
+[2025-03-18 21:14:59] INFO: ::ffff:127.0.0.1 - - [18/Mar/2025:15:44:59 +0000] "GET /api/auth HTTP/1.1" 200 154 "-" "-"
+[2025-03-18 21:17:57] INFO: ::ffff:127.0.0.1 - - [18/Mar/2025:15:47:57 +0000] "POST /api/auth/create HTTP/1.1" 200 95 "-" "-"
+[2025-03-18 21:17:57] INFO: ::ffff:127.0.0.1 - - [18/Mar/2025:15:47:57 +0000] "POST /api/auth/create HTTP/1.1" 200 95 "-" "-"
+[2025-03-18 21:17:57] ERROR: secretOrPrivateKey must have a value
+[2025-03-18 21:17:57] ERROR: Error: secretOrPrivateKey must have a value
+[2025-03-18 21:17:57] INFO: ::ffff:127.0.0.1 - - [18/Mar/2025:15:47:57 +0000] "POST /api/auth/login HTTP/1.1" 500 48 "-" "-"
+[2025-03-18 21:17:57] INFO: ::ffff:127.0.0.1 - - [18/Mar/2025:15:47:57 +0000] "GET /api/auth HTTP/1.1" 200 154 "-" "-"
+[2025-03-18 21:19:51] INFO: ::ffff:127.0.0.1 - - [18/Mar/2025:15:49:51 +0000] "POST /api/auth/create HTTP/1.1" 200 95 "-" "-"
+[2025-03-18 21:19:51] INFO: ::ffff:127.0.0.1 - - [18/Mar/2025:15:49:51 +0000] "POST /api/auth/create HTTP/1.1" 200 95 "-" "-"
+[2025-03-18 21:19:51] ERROR: secretOrPrivateKey must have a value
+[2025-03-18 21:19:51] ERROR: Error: secretOrPrivateKey must have a value
+[2025-03-18 21:19:51] INFO: ::ffff:127.0.0.1 - - [18/Mar/2025:15:49:51 +0000] "POST /api/auth/login HTTP/1.1" 500 48 "-" "-"
+[2025-03-18 21:19:51] INFO: ::ffff:127.0.0.1 - - [18/Mar/2025:15:49:51 +0000] "GET /api/auth HTTP/1.1" 200 154 "-" "-"
+[2025-03-18 21:21:05] INFO: ::ffff:127.0.0.1 - - [18/Mar/2025:15:51:05 +0000] "POST /api/auth/create HTTP/1.1" 200 95 "-" "-"
+[2025-03-18 21:21:05] INFO: ::ffff:127.0.0.1 - - [18/Mar/2025:15:51:05 +0000] "POST /api/auth/create HTTP/1.1" 200 95 "-" "-"
+[2025-03-18 21:21:05] ERROR: secretOrPrivateKey must have a value
+[2025-03-18 21:21:05] ERROR: Error: secretOrPrivateKey must have a value
+[2025-03-18 21:21:05] INFO: ::ffff:127.0.0.1 - - [18/Mar/2025:15:51:05 +0000] "POST /api/auth/login HTTP/1.1" 500 48 "-" "-"
+[2025-03-18 21:21:05] INFO: ::ffff:127.0.0.1 - - [18/Mar/2025:15:51:05 +0000] "GET /api/auth HTTP/1.1" 200 154 "-" "-"
+[2025-03-18 21:21:50] INFO: ::ffff:127.0.0.1 - - [18/Mar/2025:15:51:50 +0000] "POST /api/auth/create HTTP/1.1" 200 95 "-" "-"
+[2025-03-18 21:21:50] INFO: ::ffff:127.0.0.1 - - [18/Mar/2025:15:51:50 +0000] "POST /api/auth/create HTTP/1.1" 200 95 "-" "-"
+[2025-03-18 21:21:50] ERROR: secretOrPrivateKey must have a value
+[2025-03-18 21:21:50] ERROR: Error: secretOrPrivateKey must have a value
+[2025-03-18 21:21:50] INFO: ::ffff:127.0.0.1 - - [18/Mar/2025:15:51:50 +0000] "POST /api/auth/login HTTP/1.1" 500 48 "-" "-"
+[2025-03-18 21:21:50] INFO: ::ffff:127.0.0.1 - - [18/Mar/2025:15:51:50 +0000] "GET /api/auth HTTP/1.1" 200 154 "-" "-"
+[2025-03-18 21:22:50] INFO: ::ffff:127.0.0.1 - - [18/Mar/2025:15:52:50 +0000] "POST /api/auth/create HTTP/1.1" 200 95 "-" "-"
+[2025-03-18 21:22:50] INFO: ::ffff:127.0.0.1 - - [18/Mar/2025:15:52:50 +0000] "POST /api/auth/create HTTP/1.1" 200 95 "-" "-"
+[2025-03-18 21:22:50] ERROR: secretOrPrivateKey must have a value
+[2025-03-18 21:22:50] ERROR: Error: secretOrPrivateKey must have a value
+[2025-03-18 21:22:50] INFO: ::ffff:127.0.0.1 - - [18/Mar/2025:15:52:50 +0000] "POST /api/auth/login HTTP/1.1" 500 48 "-" "-"
+[2025-03-18 21:22:50] INFO: ::ffff:127.0.0.1 - - [18/Mar/2025:15:52:50 +0000] "GET /api/auth HTTP/1.1" 200 154 "-" "-"
+[2025-03-18 21:24:12] INFO: ::ffff:127.0.0.1 - - [18/Mar/2025:15:54:12 +0000] "POST /api/auth/create HTTP/1.1" 200 95 "-" "-"
+[2025-03-18 21:24:12] INFO: ::ffff:127.0.0.1 - - [18/Mar/2025:15:54:12 +0000] "POST /api/auth/create HTTP/1.1" 200 95 "-" "-"
+[2025-03-18 21:24:12] ERROR: secretOrPrivateKey must have a value
+[2025-03-18 21:24:12] ERROR: Error: secretOrPrivateKey must have a value
+[2025-03-18 21:24:12] INFO: ::ffff:127.0.0.1 - - [18/Mar/2025:15:54:12 +0000] "POST /api/auth/login HTTP/1.1" 500 48 "-" "-"
+[2025-03-18 21:24:12] INFO: ::ffff:127.0.0.1 - - [18/Mar/2025:15:54:12 +0000] "GET /api/auth HTTP/1.1" 200 154 "-" "-"
+[2025-03-18 21:25:53] INFO: ::ffff:127.0.0.1 - - [18/Mar/2025:15:55:53 +0000] "POST /api/auth/create HTTP/1.1" 200 95 "-" "-"
+[2025-03-18 21:25:53] INFO: ::ffff:127.0.0.1 - - [18/Mar/2025:15:55:53 +0000] "POST /api/auth/create HTTP/1.1" 200 95 "-" "-"
+[2025-03-18 21:25:53] ERROR: secretOrPrivateKey must have a value
+[2025-03-18 21:25:53] ERROR: Error: secretOrPrivateKey must have a value
+[2025-03-18 21:25:53] INFO: ::ffff:127.0.0.1 - - [18/Mar/2025:15:55:53 +0000] "POST /api/auth/login HTTP/1.1" 500 48 "-" "-"
+[2025-03-18 21:25:53] INFO: ::ffff:127.0.0.1 - - [18/Mar/2025:15:55:53 +0000] "GET /api/auth HTTP/1.1" 200 154 "-" "-"
+[2025-03-18 21:26:53] INFO: ::ffff:127.0.0.1 - - [18/Mar/2025:15:56:53 +0000] "POST /api/auth/create HTTP/1.1" 200 95 "-" "-"
+[2025-03-18 21:26:53] INFO: ::ffff:127.0.0.1 - - [18/Mar/2025:15:56:53 +0000] "POST /api/auth/create HTTP/1.1" 200 95 "-" "-"
+[2025-03-18 21:26:53] ERROR: secretOrPrivateKey must have a value
+[2025-03-18 21:26:53] ERROR: Error: secretOrPrivateKey must have a value
+[2025-03-18 21:26:53] INFO: ::ffff:127.0.0.1 - - [18/Mar/2025:15:56:53 +0000] "POST /api/auth/login HTTP/1.1" 500 48 "-" "-"
+[2025-03-18 21:26:53] INFO: ::ffff:127.0.0.1 - - [18/Mar/2025:15:56:53 +0000] "GET /api/auth HTTP/1.1" 200 154 "-" "-"
+[2025-03-18 21:31:59] INFO: ::ffff:127.0.0.1 - - [18/Mar/2025:16:01:59 +0000] "POST /api/auth/create HTTP/1.1" 200 95 "-" "-"
+[2025-03-18 21:31:59] INFO: ::ffff:127.0.0.1 - - [18/Mar/2025:16:01:59 +0000] "POST /api/auth/create HTTP/1.1" 200 95 "-" "-"
+[2025-03-18 21:31:59] ERROR: secretOrPrivateKey must have a value
+[2025-03-18 21:31:59] ERROR: Error: secretOrPrivateKey must have a value
+[2025-03-18 21:31:59] INFO: ::ffff:127.0.0.1 - - [18/Mar/2025:16:01:59 +0000] "POST /api/auth/login HTTP/1.1" 500 48 "-" "-"
+[2025-03-18 21:31:59] INFO: ::ffff:127.0.0.1 - - [18/Mar/2025:16:01:59 +0000] "GET /api/auth HTTP/1.1" 200 154 "-" "-"
+[2025-03-18 21:31:59] INFO: 🚀 Server is running on http://localhost:5000
+[2025-03-18 21:34:23] INFO: ::ffff:127.0.0.1 - - [18/Mar/2025:16:04:23 +0000] "POST /api/auth/create HTTP/1.1" 200 95 "-" "-"
+[2025-03-18 21:34:23] INFO: ::ffff:127.0.0.1 - - [18/Mar/2025:16:04:23 +0000] "POST /api/auth/create HTTP/1.1" 200 95 "-" "-"
+[2025-03-18 21:34:23] INFO: ::ffff:127.0.0.1 - - [18/Mar/2025:16:04:23 +0000] "GET /api/auth HTTP/1.1" 200 154 "-" "-"
+[2025-03-18 21:35:42] INFO: ::ffff:127.0.0.1 - - [18/Mar/2025:16:05:42 +0000] "POST /api/auth/create HTTP/1.1" 200 95 "-" "-"
+[2025-03-18 21:35:42] INFO: ::ffff:127.0.0.1 - - [18/Mar/2025:16:05:42 +0000] "POST /api/auth/create HTTP/1.1" 200 95 "-" "-"
+[2025-03-18 21:35:42] INFO: login users
+[2025-03-18 21:35:42] INFO: ::ffff:127.0.0.1 - - [18/Mar/2025:16:05:42 +0000] "POST /api/auth/login HTTP/1.1" 200 291 "-" "-"
+[2025-03-18 21:35:42] INFO: ::ffff:127.0.0.1 - - [18/Mar/2025:16:05:42 +0000] "GET /api/auth HTTP/1.1" 200 154 "-" "-"
+[2025-03-18 21:36:09] INFO: ::ffff:127.0.0.1 - - [18/Mar/2025:16:06:09 +0000] "POST /api/auth/create HTTP/1.1" 200 95 "-" "-"
+[2025-03-18 21:36:09] INFO: ::ffff:127.0.0.1 - - [18/Mar/2025:16:06:09 +0000] "POST /api/auth/create HTTP/1.1" 200 95 "-" "-"
+[2025-03-18 21:36:09] INFO: login users
+[2025-03-18 21:36:09] INFO: ::ffff:127.0.0.1 - - [18/Mar/2025:16:06:09 +0000] "POST /api/auth/login HTTP/1.1" 200 291 "-" "-"
+[2025-03-18 21:36:09] INFO: ::ffff:127.0.0.1 - - [18/Mar/2025:16:06:09 +0000] "GET /api/auth HTTP/1.1" 200 154 "-" "-"
+[2025-03-18 21:37:59] INFO: ::ffff:127.0.0.1 - - [18/Mar/2025:16:07:59 +0000] "POST /api/auth/create HTTP/1.1" 200 95 "-" "-"
+[2025-03-18 21:37:59] INFO: ::ffff:127.0.0.1 - - [18/Mar/2025:16:07:59 +0000] "POST /api/auth/create HTTP/1.1" 200 95 "-" "-"
+[2025-03-18 21:37:59] INFO: login users
+[2025-03-18 21:37:59] INFO: ::ffff:127.0.0.1 - - [18/Mar/2025:16:07:59 +0000] "POST /api/auth/login HTTP/1.1" 200 291 "-" "-"
+[2025-03-18 21:37:59] INFO: ::ffff:127.0.0.1 - - [18/Mar/2025:16:07:59 +0000] "GET /api/auth HTTP/1.1" 200 154 "-" "-"
+[2025-03-18 21:38:09] INFO: ::ffff:127.0.0.1 - - [18/Mar/2025:16:08:09 +0000] "POST /api/auth/create HTTP/1.1" 200 95 "-" "-"
+[2025-03-18 21:38:09] INFO: login users
+[2025-03-18 21:38:09] INFO: ::ffff:127.0.0.1 - - [18/Mar/2025:16:08:09 +0000] "POST /api/auth/login HTTP/1.1" 200 291 "-" "-"
+[2025-03-18 21:38:09] INFO: ::ffff:127.0.0.1 - - [18/Mar/2025:16:08:09 +0000] "GET /api/auth HTTP/1.1" 200 154 "-" "-"
+[2025-03-18 21:38:22] INFO: ::ffff:127.0.0.1 - - [18/Mar/2025:16:08:22 +0000] "POST /api/auth/create HTTP/1.1" 200 95 "-" "-"
+[2025-03-18 21:38:22] INFO: login users
+[2025-03-18 21:38:22] INFO: ::ffff:127.0.0.1 - - [18/Mar/2025:16:08:22 +0000] "POST /api/auth/login HTTP/1.1" 200 291 "-" "-"
+[2025-03-18 21:38:22] INFO: ::ffff:127.0.0.1 - - [18/Mar/2025:16:08:22 +0000] "GET /api/auth HTTP/1.1" 200 154 "-" "-"
+[2025-03-18 21:40:00] INFO: ::ffff:127.0.0.1 - - [18/Mar/2025:16:10:00 +0000] "POST /api/auth/create HTTP/1.1" 200 95 "-" "-"
+[2025-03-18 21:40:00] ERROR: email password not matched
+[2025-03-18 21:40:00] ERROR: Error: email password not matched
+[2025-03-18 21:40:00] INFO: ::ffff:127.0.0.1 - - [18/Mar/2025:16:10:00 +0000] "POST /api/auth/login HTTP/1.1" 500 38 "-" "-"
+[2025-03-18 21:40:00] INFO: ::ffff:127.0.0.1 - - [18/Mar/2025:16:10:00 +0000] "GET /api/auth HTTP/1.1" 200 154 "-" "-"
+[2025-03-18 21:40:16] INFO: ::ffff:127.0.0.1 - - [18/Mar/2025:16:10:16 +0000] "POST /api/auth/create HTTP/1.1" 200 95 "-" "-"
+[2025-03-18 21:40:16] INFO: login users
+[2025-03-18 21:40:16] INFO: ::ffff:127.0.0.1 - - [18/Mar/2025:16:10:16 +0000] "POST /api/auth/login HTTP/1.1" 200 291 "-" "-"
+[2025-03-18 21:40:16] INFO: ::ffff:127.0.0.1 - - [18/Mar/2025:16:10:16 +0000] "GET /api/auth HTTP/1.1" 200 154 "-" "-"
+[2025-03-18 21:40:33] INFO: ::ffff:127.0.0.1 - - [18/Mar/2025:16:10:33 +0000] "POST /api/auth/create HTTP/1.1" 200 95 "-" "-"
+[2025-03-18 21:40:33] INFO: login users
+[2025-03-18 21:40:33] INFO: ::ffff:127.0.0.1 - - [18/Mar/2025:16:10:33 +0000] "POST /api/auth/login HTTP/1.1" 200 291 "-" "-"
+[2025-03-18 21:40:33] INFO: ::ffff:127.0.0.1 - - [18/Mar/2025:16:10:33 +0000] "GET /api/auth HTTP/1.1" 200 154 "-" "-"
+[2025-03-18 21:40:56] INFO: ::ffff:127.0.0.1 - - [18/Mar/2025:16:10:56 +0000] "POST /api/auth/create HTTP/1.1" 200 95 "-" "-"
+[2025-03-18 21:40:56] INFO: login users
+[2025-03-18 21:40:56] INFO: ::ffff:127.0.0.1 - - [18/Mar/2025:16:10:56 +0000] "POST /api/auth/login HTTP/1.1" 200 291 "-" "-"
+[2025-03-18 21:40:56] INFO: ::ffff:127.0.0.1 - - [18/Mar/2025:16:10:56 +0000] "GET /api/auth HTTP/1.1" 200 154 "-" "-"
+[2025-03-18 21:51:07] INFO: ::ffff:127.0.0.1 - - [18/Mar/2025:16:21:07 +0000] "POST /api/auth/create HTTP/1.1" 200 95 "-" "-"
+[2025-03-18 21:51:07] INFO: login users
+[2025-03-18 21:51:07] INFO: ::ffff:127.0.0.1 - - [18/Mar/2025:16:21:07 +0000] "POST /api/auth/login HTTP/1.1" 200 291 "-" "-"
+[2025-03-18 21:51:07] INFO: ::ffff:127.0.0.1 - - [18/Mar/2025:16:21:07 +0000] "GET /api/auth HTTP/1.1" 200 154 "-" "-"
