@@ -3,11 +3,16 @@ import { db } from "../db";
 import { generateAccessToken, generateRefreshToken } from "../utils/jwt";
 import { LoginResponse } from "../../prisma/interfaces";
 import logger from "../config/logger";
+import pwdHash from "password-hash";
 
 class AuthController {
   async create(req: Request, res: Response, next: NextFunction) {
     try {
-      const user = await db.users.create({ data: { ...req.body } });
+      const hashedPassword = pwdHash.generate(req.body.password);
+      const user = await db.users.create({
+        data: { ...req.body, password: hashedPassword },
+        omit: { password: true },
+      });
       res.json(user);
     } catch (error) {
       if (error instanceof Error) {
@@ -19,14 +24,19 @@ class AuthController {
   async login(req: Request, res: Response<LoginResponse>, next: NextFunction) {
     try {
       const { email, password } = req.body;
-      const users = await db.users.findUnique({ where: { email, password } });
-      if (!users) {
-        throw new Error("email password not matched");
+      const currentUser = await db.users.findUnique({ where: { email } });
+      if (!currentUser) {
+        throw new Error("email not matched");
+      }
+
+      const isVerifyPassword = pwdHash.verify(password, currentUser.password);
+      if (!isVerifyPassword) {
+        throw new Error("This password is not matched on current email.");
       }
       const loginResponse = {
         success: true,
-        accessToken: generateAccessToken({ userId: users?.id }),
-        refreshToken: generateRefreshToken({ userId: users?.id }),
+        accessToken: generateAccessToken({ userId: currentUser?.id }),
+        refreshToken: generateRefreshToken({ userId: currentUser?.id }),
       };
       logger.info("login users");
       res.json(loginResponse);

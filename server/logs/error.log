@@ -38,3 +38,83 @@
 [2025-03-18 21:31:59] ERROR: Error: secretOrPrivateKey must have a value
 [2025-03-18 21:40:00] ERROR: email password not matched
 [2025-03-18 21:40:00] ERROR: Error: email password not matched
+[2025-03-19 19:01:29] ERROR: email password not matched
+[2025-03-19 19:01:29] ERROR: Error: email password not matched
+[2025-03-19 20:59:58] ERROR: email password not matched
+[2025-03-19 20:59:58] ERROR: Error: email password not matched
+[2025-03-19 21:00:40] ERROR: email password not matched
+[2025-03-19 21:00:40] ERROR: Error: email password not matched
+[2025-03-19 21:00:47] ERROR: email password not matched
+[2025-03-19 21:00:47] ERROR: Error: email password not matched
+[2025-03-19 21:02:04] ERROR: email password not matched
+[2025-03-19 21:02:04] ERROR: Error: email password not matched
+[2025-03-19 21:19:19] ERROR: email not matched
+[2025-03-19 21:19:19] ERROR: Error: email not matched
+[2025-03-19 21:21:15] ERROR: email not matched
+[2025-03-19 21:21:15] ERROR: Error: email not matched
+[2025-03-19 21:23:08] ERROR: 
+Invalid `db.users.create()` invocation in
+D:\Aravinth\projects\Node-React\node-react-jwt-auth-ts\server\src\controllers\auth.controller.ts:12:35
+
+   9 async create(req: Request, res: Response, next: NextFunction) {
+  10   try {
+  11     const hashedPassword = pwdHash.generate(req.body.password);
+→ 12     const user = await db.users.create(
+Unique constraint failed on the fields: (`email`)
+[2025-03-19 21:23:08] ERROR: Error: 
+Invalid `db.users.create()` invocation in
+D:\Aravinth\projects\Node-React\node-react-jwt-auth-ts\server\src\controllers\auth.controller.ts:12:35
+
+   9 async create(req: Request, res: Response, next: NextFunction) {
+  10   try {
+  11     const hashedPassword = pwdHash.generate(req.body.password);
+→ 12     const user = await db.users.create(
+Unique constraint failed on the fields: (`email`)
+[2025-03-19 21:24:31] ERROR: This password is not matched on current email.
+[2025-03-19 21:24:31] ERROR: Error: This password is not matched on current email.
+[2025-03-19 21:37:54] ERROR: This password is not matched on current email.
+[2025-03-19 21:37:54] ERROR: Error: This password is not matched on current email.
+[2025-03-19 21:38:19] ERROR: This password is not matched on current email.
+[2025-03-19 21:38:19] ERROR: Error: This password is not matched on current email.
+[2025-03-19 21:39:37] ERROR: This password is not matched on current email.
+[2025-03-19 21:39:37] ERROR: Error: This password is not matched on current email.
+[2025-03-19 21:39:58] ERROR: This password is not matched on current email.
+[2025-03-19 21:39:58] ERROR: Error: This password is not matched on current email.
+[2025-03-19 21:43:00] ERROR: This password is not matched on current email.
+[2025-03-19 21:43:00] ERROR: Error: This password is not matched on current email.
+[2025-03-19 21:44:26] ERROR: This password is not matched on current email.
+[2025-03-19 21:44:26] ERROR: Error: This password is not matched on current email.
+[2025-03-19 21:47:42] ERROR: This password is not matched on current email.
+[2025-03-19 21:47:42] ERROR: Error: This password is not matched on current email.
+[2025-03-19 21:48:34] ERROR: This password is not matched on current email.
+[2025-03-19 21:48:34] ERROR: Error: This password is not matched on current email.
+[2025-03-19 21:49:05] ERROR: This password is not matched on current email.
+[2025-03-19 21:49:05] ERROR: Error: This password is not matched on current email.
+[2025-03-19 21:49:37] ERROR: This password is not matched on current email.
+[2025-03-19 21:49:37] ERROR: Error: This password is not matched on current email.
+[2025-03-19 21:49:41] ERROR: This password is not matched on current email.
+[2025-03-19 21:49:41] ERROR: Error: This password is not matched on current email.
+[2025-03-19 21:54:55] ERROR: This password is not matched on current email.
+[2025-03-19 21:54:55] ERROR: Error: This password is not matched on current email.
+[2025-03-19 21:55:27] ERROR: This password is not matched on current email.
+[2025-03-19 21:55:27] ERROR: Error: This password is not matched on current email.
+[2025-03-19 21:56:04] ERROR: This password is not matched on current email.
+[2025-03-19 21:56:04] ERROR: Error: This password is not matched on current email.
+[2025-03-19 21:56:32] ERROR: This password is not matched on current email.
+[2025-03-19 21:56:33] ERROR: Error: This password is not matched on current email.
+[2025-03-19 21:58:55] ERROR: This password is not matched on current email.
+[2025-03-19 21:58:55] ERROR: Error: This password is not matched on current email.
+[2025-03-19 21:59:01] ERROR: This password is not matched on current email.
+[2025-03-19 21:59:01] ERROR: Error: This password is not matched on current email.
+[2025-03-19 21:59:26] ERROR: This password is not matched on current email.
+[2025-03-19 21:59:26] ERROR: Error: This password is not matched on current email.
+[2025-03-19 22:00:29] ERROR: This password is not matched on current email.
+[2025-03-19 22:00:29] ERROR: Error: This password is not matched on current email.
+[2025-03-19 22:00:58] ERROR: This password is not matched on current email.
+[2025-03-19 22:00:58] ERROR: Error: This password is not matched on current email.
+[2025-03-19 22:01:27] ERROR: This password is not matched on current email.
+[2025-03-19 22:01:27] ERROR: Error: This password is not matched on current email.
+[2025-03-19 22:01:36] ERROR: This password is not matched on current email.
+[2025-03-19 22:01:36] ERROR: Error: This password is not matched on current email.
+[2025-03-19 22:02:37] ERROR: This password is not matched on current email.
+[2025-03-19 22:02:37] ERROR: Error: This password is not matched on current email.

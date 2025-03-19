@@ -166,3 +166,186 @@
 [2025-03-18 21:51:07] INFO: login users
 [2025-03-18 21:51:07] INFO: ::ffff:127.0.0.1 - - [18/Mar/2025:16:21:07 +0000] "POST /api/auth/login HTTP/1.1" 200 291 "-" "-"
 [2025-03-18 21:51:07] INFO: ::ffff:127.0.0.1 - - [18/Mar/2025:16:21:07 +0000] "GET /api/auth HTTP/1.1" 200 154 "-" "-"
+[2025-03-19 19:01:10] INFO: ::ffff:127.0.0.1 - - [19/Mar/2025:13:31:10 +0000] "POST /api/auth/create HTTP/1.1" 200 95 "-" "-"
+[2025-03-19 19:01:10] INFO: login users
+[2025-03-19 19:01:10] INFO: ::ffff:127.0.0.1 - - [19/Mar/2025:13:31:10 +0000] "POST /api/auth/login HTTP/1.1" 200 291 "-" "-"
+[2025-03-19 19:01:10] INFO: ::ffff:127.0.0.1 - - [19/Mar/2025:13:31:10 +0000] "GET /api/auth HTTP/1.1" 200 154 "-" "-"
+[2025-03-19 19:01:29] INFO: ::ffff:127.0.0.1 - - [19/Mar/2025:13:31:29 +0000] "POST /api/auth/create HTTP/1.1" 200 95 "-" "-"
+[2025-03-19 19:01:29] ERROR: email password not matched
+[2025-03-19 19:01:29] ERROR: Error: email password not matched
+[2025-03-19 19:01:29] INFO: ::ffff:127.0.0.1 - - [19/Mar/2025:13:31:29 +0000] "POST /api/auth/login HTTP/1.1" 500 38 "-" "-"
+[2025-03-19 19:01:29] INFO: ::ffff:127.0.0.1 - - [19/Mar/2025:13:31:29 +0000] "GET /api/auth HTTP/1.1" 200 154 "-" "-"
+[2025-03-19 20:59:58] INFO: ::ffff:127.0.0.1 - - [19/Mar/2025:15:29:58 +0000] "POST /api/auth/create HTTP/1.1" 200 95 "-" "-"
+[2025-03-19 20:59:58] ERROR: email password not matched
+[2025-03-19 20:59:58] ERROR: Error: email password not matched
+[2025-03-19 20:59:58] INFO: ::ffff:127.0.0.1 - - [19/Mar/2025:15:29:58 +0000] "POST /api/auth/login HTTP/1.1" 500 38 "-" "-"
+[2025-03-19 20:59:58] INFO: ::ffff:127.0.0.1 - - [19/Mar/2025:15:29:58 +0000] "GET /api/auth HTTP/1.1" 200 154 "-" "-"
+[2025-03-19 21:00:40] INFO: ::ffff:127.0.0.1 - - [19/Mar/2025:15:30:40 +0000] "POST /api/auth/create HTTP/1.1" 200 95 "-" "-"
+[2025-03-19 21:00:40] ERROR: email password not matched
+[2025-03-19 21:00:40] ERROR: Error: email password not matched
+[2025-03-19 21:00:40] INFO: ::ffff:127.0.0.1 - - [19/Mar/2025:15:30:40 +0000] "POST /api/auth/login HTTP/1.1" 500 38 "-" "-"
+[2025-03-19 21:00:40] INFO: ::ffff:127.0.0.1 - - [19/Mar/2025:15:30:40 +0000] "GET /api/auth HTTP/1.1" 200 154 "-" "-"
+[2025-03-19 21:00:47] INFO: ::ffff:127.0.0.1 - - [19/Mar/2025:15:30:47 +0000] "POST /api/auth/create HTTP/1.1" 200 95 "-" "-"
+[2025-03-19 21:00:47] ERROR: email password not matched
+[2025-03-19 21:00:47] ERROR: Error: email password not matched
+[2025-03-19 21:00:47] INFO: ::ffff:127.0.0.1 - - [19/Mar/2025:15:30:47 +0000] "POST /api/auth/login HTTP/1.1" 500 38 "-" "-"
+[2025-03-19 21:00:47] INFO: ::ffff:127.0.0.1 - - [19/Mar/2025:15:30:47 +0000] "GET /api/auth HTTP/1.1" 200 154 "-" "-"
+[2025-03-19 21:02:04] INFO: ::ffff:127.0.0.1 - - [19/Mar/2025:15:32:04 +0000] "POST /api/auth/create HTTP/1.1" 200 146 "-" "-"
+[2025-03-19 21:02:04] ERROR: email password not matched
+[2025-03-19 21:02:04] ERROR: Error: email password not matched
+[2025-03-19 21:02:04] INFO: ::ffff:127.0.0.1 - - [19/Mar/2025:15:32:04 +0000] "POST /api/auth/login HTTP/1.1" 500 38 "-" "-"
+[2025-03-19 21:02:04] INFO: ::ffff:127.0.0.1 - - [19/Mar/2025:15:32:04 +0000] "GET /api/auth HTTP/1.1" 200 154 "-" "-"
+[2025-03-19 21:02:38] INFO: 🚀 Server is running on http://localhost:5000
+[2025-03-19 21:04:04] INFO: ::ffff:127.0.0.1 - - [19/Mar/2025:15:34:04 +0000] "POST /api/auth/create HTTP/1.1" 200 224 "-" "Keyrunner"
+[2025-03-19 21:05:15] INFO: 🚀 Server is running on http://localhost:5000
+[2025-03-19 21:05:39] INFO: 🚀 Server is running on http://localhost:5000
+[2025-03-19 21:08:18] INFO: 🚀 Server is running on http://localhost:5000
+[2025-03-19 21:09:56] INFO: 🚀 Server is running on http://localhost:5000
+[2025-03-19 21:10:08] INFO: ::ffff:127.0.0.1 - - [19/Mar/2025:15:40:08 +0000] "POST /api/auth/create HTTP/1.1" 200 154 "-" "Keyrunner"
+[2025-03-19 21:12:44] INFO: login users
+[2025-03-19 21:12:44] INFO: ::ffff:127.0.0.1 - - [19/Mar/2025:15:42:44 +0000] "POST /api/auth/login HTTP/1.1" 200 291 "-" "Keyrunner"
+[2025-03-19 21:19:19] INFO: ::ffff:127.0.0.1 - - [19/Mar/2025:15:49:19 +0000] "POST /api/auth/create HTTP/1.1" 200 146 "-" "-"
+[2025-03-19 21:19:19] ERROR: email not matched
+[2025-03-19 21:19:19] ERROR: Error: email not matched
+[2025-03-19 21:19:19] INFO: ::ffff:127.0.0.1 - - [19/Mar/2025:15:49:19 +0000] "POST /api/auth/login HTTP/1.1" 500 29 "-" "-"
+[2025-03-19 21:19:19] INFO: ::ffff:127.0.0.1 - - [19/Mar/2025:15:49:19 +0000] "GET /api/auth HTTP/1.1" 200 154 "-" "-"
+[2025-03-19 21:21:15] INFO: ::ffff:127.0.0.1 - - [19/Mar/2025:15:51:15 +0000] "POST /api/auth/create HTTP/1.1" 200 146 "-" "-"
+[2025-03-19 21:21:15] ERROR: email not matched
+[2025-03-19 21:21:15] ERROR: Error: email not matched
+[2025-03-19 21:21:15] INFO: ::ffff:127.0.0.1 - - [19/Mar/2025:15:51:15 +0000] "POST /api/auth/login HTTP/1.1" 500 29 "-" "-"
+[2025-03-19 21:21:15] INFO: ::ffff:127.0.0.1 - - [19/Mar/2025:15:51:15 +0000] "GET /api/auth HTTP/1.1" 200 154 "-" "-"
+[2025-03-19 21:23:08] ERROR: 
+Invalid `db.users.create()` invocation in
+D:\Aravinth\projects\Node-React\node-react-jwt-auth-ts\server\src\controllers\auth.controller.ts:12:35
+
+   9 async create(req: Request, res: Response, next: NextFunction) {
+  10   try {
+  11     const hashedPassword = pwdHash.generate(req.body.password);
+→ 12     const user = await db.users.create(
+Unique constraint failed on the fields: (`email`)
+[2025-03-19 21:23:08] ERROR: Error: 
+Invalid `db.users.create()` invocation in
+D:\Aravinth\projects\Node-React\node-react-jwt-auth-ts\server\src\controllers\auth.controller.ts:12:35
+
+   9 async create(req: Request, res: Response, next: NextFunction) {
+  10   try {
+  11     const hashedPassword = pwdHash.generate(req.body.password);
+→ 12     const user = await db.users.create(
+Unique constraint failed on the fields: (`email`)
+[2025-03-19 21:23:08] INFO: ::ffff:127.0.0.1 - - [19/Mar/2025:15:53:08 +0000] "POST /api/auth/create HTTP/1.1" 500 422 "-" "Keyrunner"
+[2025-03-19 21:24:31] INFO: ::ffff:127.0.0.1 - - [19/Mar/2025:15:54:31 +0000] "POST /api/auth/create HTTP/1.1" 200 146 "-" "-"
+[2025-03-19 21:24:31] ERROR: This password is not matched on current email.
+[2025-03-19 21:24:31] ERROR: Error: This password is not matched on current email.
+[2025-03-19 21:24:31] INFO: ::ffff:127.0.0.1 - - [19/Mar/2025:15:54:31 +0000] "POST /api/auth/login HTTP/1.1" 500 58 "-" "-"
+[2025-03-19 21:24:31] INFO: ::ffff:127.0.0.1 - - [19/Mar/2025:15:54:31 +0000] "GET /api/auth HTTP/1.1" 200 154 "-" "-"
+[2025-03-19 21:37:54] INFO: ::ffff:127.0.0.1 - - [19/Mar/2025:16:07:54 +0000] "POST /api/auth/create HTTP/1.1" 200 146 "-" "-"
+[2025-03-19 21:37:54] ERROR: This password is not matched on current email.
+[2025-03-19 21:37:54] ERROR: Error: This password is not matched on current email.
+[2025-03-19 21:37:54] INFO: ::ffff:127.0.0.1 - - [19/Mar/2025:16:07:54 +0000] "POST /api/auth/login HTTP/1.1" 500 58 "-" "-"
+[2025-03-19 21:37:55] INFO: ::ffff:127.0.0.1 - - [19/Mar/2025:16:07:55 +0000] "GET /api/auth HTTP/1.1" 200 154 "-" "-"
+[2025-03-19 21:38:19] INFO: ::ffff:127.0.0.1 - - [19/Mar/2025:16:08:19 +0000] "POST /api/auth/create HTTP/1.1" 200 146 "-" "-"
+[2025-03-19 21:38:19] ERROR: This password is not matched on current email.
+[2025-03-19 21:38:19] ERROR: Error: This password is not matched on current email.
+[2025-03-19 21:38:19] INFO: ::ffff:127.0.0.1 - - [19/Mar/2025:16:08:19 +0000] "POST /api/auth/login HTTP/1.1" 500 58 "-" "-"
+[2025-03-19 21:38:19] INFO: ::ffff:127.0.0.1 - - [19/Mar/2025:16:08:19 +0000] "GET /api/auth HTTP/1.1" 200 154 "-" "-"
+[2025-03-19 21:39:37] INFO: ::ffff:127.0.0.1 - - [19/Mar/2025:16:09:37 +0000] "POST /api/auth/create HTTP/1.1" 200 146 "-" "-"
+[2025-03-19 21:39:37] ERROR: This password is not matched on current email.
+[2025-03-19 21:39:37] ERROR: Error: This password is not matched on current email.
+[2025-03-19 21:39:37] INFO: ::ffff:127.0.0.1 - - [19/Mar/2025:16:09:37 +0000] "POST /api/auth/login HTTP/1.1" 500 58 "-" "-"
+[2025-03-19 21:39:37] INFO: ::ffff:127.0.0.1 - - [19/Mar/2025:16:09:37 +0000] "GET /api/auth HTTP/1.1" 200 154 "-" "-"
+[2025-03-19 21:39:58] INFO: ::ffff:127.0.0.1 - - [19/Mar/2025:16:09:58 +0000] "POST /api/auth/create HTTP/1.1" 200 146 "-" "-"
+[2025-03-19 21:39:58] ERROR: This password is not matched on current email.
+[2025-03-19 21:39:58] ERROR: Error: This password is not matched on current email.
+[2025-03-19 21:39:58] INFO: ::ffff:127.0.0.1 - - [19/Mar/2025:16:09:58 +0000] "POST /api/auth/login HTTP/1.1" 500 58 "-" "-"
+[2025-03-19 21:39:58] INFO: ::ffff:127.0.0.1 - - [19/Mar/2025:16:09:58 +0000] "GET /api/auth HTTP/1.1" 200 154 "-" "-"
+[2025-03-19 21:43:00] ERROR: This password is not matched on current email.
+[2025-03-19 21:43:00] ERROR: Error: This password is not matched on current email.
+[2025-03-19 21:43:00] INFO: ::ffff:127.0.0.1 - - [19/Mar/2025:16:13:00 +0000] "POST /api/auth/login HTTP/1.1" 500 58 "-" "-"
+[2025-03-19 21:43:00] INFO: ::ffff:127.0.0.1 - - [19/Mar/2025:16:13:00 +0000] "GET /api/auth HTTP/1.1" 200 154 "-" "-"
+[2025-03-19 21:44:26] INFO: ::ffff:127.0.0.1 - - [19/Mar/2025:16:14:26 +0000] "POST /api/auth/create HTTP/1.1" 200 146 "-" "-"
+[2025-03-19 21:44:26] ERROR: This password is not matched on current email.
+[2025-03-19 21:44:26] ERROR: Error: This password is not matched on current email.
+[2025-03-19 21:44:26] INFO: ::ffff:127.0.0.1 - - [19/Mar/2025:16:14:26 +0000] "POST /api/auth/login HTTP/1.1" 500 58 "-" "-"
+[2025-03-19 21:44:26] INFO: ::ffff:127.0.0.1 - - [19/Mar/2025:16:14:26 +0000] "GET /api/auth HTTP/1.1" 200 154 "-" "-"
+[2025-03-19 21:47:42] INFO: ::ffff:127.0.0.1 - - [19/Mar/2025:16:17:42 +0000] "POST /api/auth/create HTTP/1.1" 200 146 "-" "-"
+[2025-03-19 21:47:42] ERROR: This password is not matched on current email.
+[2025-03-19 21:47:42] ERROR: Error: This password is not matched on current email.
+[2025-03-19 21:47:42] INFO: ::ffff:127.0.0.1 - - [19/Mar/2025:16:17:42 +0000] "POST /api/auth/login HTTP/1.1" 500 58 "-" "-"
+[2025-03-19 21:47:42] INFO: ::ffff:127.0.0.1 - - [19/Mar/2025:16:17:42 +0000] "GET /api/auth HTTP/1.1" 200 154 "-" "-"
+[2025-03-19 21:48:34] INFO: ::ffff:127.0.0.1 - - [19/Mar/2025:16:18:34 +0000] "POST /api/auth/create HTTP/1.1" 200 146 "-" "-"
+[2025-03-19 21:48:34] ERROR: This password is not matched on current email.
+[2025-03-19 21:48:34] ERROR: Error: This password is not matched on current email.
+[2025-03-19 21:48:34] INFO: ::ffff:127.0.0.1 - - [19/Mar/2025:16:18:34 +0000] "POST /api/auth/login HTTP/1.1" 500 58 "-" "-"
+[2025-03-19 21:48:34] INFO: ::ffff:127.0.0.1 - - [19/Mar/2025:16:18:34 +0000] "GET /api/auth HTTP/1.1" 200 154 "-" "-"
+[2025-03-19 21:49:05] INFO: ::ffff:127.0.0.1 - - [19/Mar/2025:16:19:05 +0000] "POST /api/auth/create HTTP/1.1" 200 146 "-" "-"
+[2025-03-19 21:49:05] ERROR: This password is not matched on current email.
+[2025-03-19 21:49:05] ERROR: Error: This password is not matched on current email.
+[2025-03-19 21:49:05] INFO: ::ffff:127.0.0.1 - - [19/Mar/2025:16:19:05 +0000] "POST /api/auth/login HTTP/1.1" 500 58 "-" "-"
+[2025-03-19 21:49:05] INFO: ::ffff:127.0.0.1 - - [19/Mar/2025:16:19:05 +0000] "GET /api/auth HTTP/1.1" 200 154 "-" "-"
+[2025-03-19 21:49:37] INFO: ::ffff:127.0.0.1 - - [19/Mar/2025:16:19:37 +0000] "POST /api/auth/create HTTP/1.1" 200 146 "-" "-"
+[2025-03-19 21:49:37] ERROR: This password is not matched on current email.
+[2025-03-19 21:49:37] ERROR: Error: This password is not matched on current email.
+[2025-03-19 21:49:37] INFO: ::ffff:127.0.0.1 - - [19/Mar/2025:16:19:37 +0000] "POST /api/auth/login HTTP/1.1" 500 58 "-" "-"
+[2025-03-19 21:49:37] INFO: ::ffff:127.0.0.1 - - [19/Mar/2025:16:19:37 +0000] "GET /api/auth HTTP/1.1" 200 154 "-" "-"
+[2025-03-19 21:49:41] INFO: ::ffff:127.0.0.1 - - [19/Mar/2025:16:19:41 +0000] "POST /api/auth/create HTTP/1.1" 200 146 "-" "-"
+[2025-03-19 21:49:41] ERROR: This password is not matched on current email.
+[2025-03-19 21:49:41] ERROR: Error: This password is not matched on current email.
+[2025-03-19 21:49:41] INFO: ::ffff:127.0.0.1 - - [19/Mar/2025:16:19:41 +0000] "POST /api/auth/login HTTP/1.1" 500 58 "-" "-"
+[2025-03-19 21:49:41] INFO: ::ffff:127.0.0.1 - - [19/Mar/2025:16:19:41 +0000] "GET /api/auth HTTP/1.1" 200 154 "-" "-"
+[2025-03-19 21:54:55] INFO: ::ffff:127.0.0.1 - - [19/Mar/2025:16:24:55 +0000] "POST /api/auth/create HTTP/1.1" 200 146 "-" "-"
+[2025-03-19 21:54:55] ERROR: This password is not matched on current email.
+[2025-03-19 21:54:55] ERROR: Error: This password is not matched on current email.
+[2025-03-19 21:54:55] INFO: ::ffff:127.0.0.1 - - [19/Mar/2025:16:24:55 +0000] "POST /api/auth/login HTTP/1.1" 500 58 "-" "-"
+[2025-03-19 21:54:55] INFO: ::ffff:127.0.0.1 - - [19/Mar/2025:16:24:55 +0000] "GET /api/auth HTTP/1.1" 200 154 "-" "-"
+[2025-03-19 21:55:27] INFO: ::ffff:127.0.0.1 - - [19/Mar/2025:16:25:27 +0000] "POST /api/auth/create HTTP/1.1" 200 146 "-" "-"
+[2025-03-19 21:55:27] ERROR: This password is not matched on current email.
+[2025-03-19 21:55:27] ERROR: Error: This password is not matched on current email.
+[2025-03-19 21:55:27] INFO: ::ffff:127.0.0.1 - - [19/Mar/2025:16:25:27 +0000] "POST /api/auth/login HTTP/1.1" 500 58 "-" "-"
+[2025-03-19 21:55:27] INFO: ::ffff:127.0.0.1 - - [19/Mar/2025:16:25:27 +0000] "GET /api/auth HTTP/1.1" 200 154 "-" "-"
+[2025-03-19 21:56:03] INFO: ::ffff:127.0.0.1 - - [19/Mar/2025:16:26:03 +0000] "POST /api/auth/create HTTP/1.1" 200 146 "-" "-"
+[2025-03-19 21:56:04] ERROR: This password is not matched on current email.
+[2025-03-19 21:56:04] ERROR: Error: This password is not matched on current email.
+[2025-03-19 21:56:04] INFO: ::ffff:127.0.0.1 - - [19/Mar/2025:16:26:04 +0000] "POST /api/auth/login HTTP/1.1" 500 58 "-" "-"
+[2025-03-19 21:56:04] INFO: ::ffff:127.0.0.1 - - [19/Mar/2025:16:26:04 +0000] "GET /api/auth HTTP/1.1" 200 154 "-" "-"
+[2025-03-19 21:56:32] INFO: ::ffff:127.0.0.1 - - [19/Mar/2025:16:26:32 +0000] "POST /api/auth/create HTTP/1.1" 200 146 "-" "-"
+[2025-03-19 21:56:32] ERROR: This password is not matched on current email.
+[2025-03-19 21:56:33] ERROR: Error: This password is not matched on current email.
+[2025-03-19 21:56:33] INFO: ::ffff:127.0.0.1 - - [19/Mar/2025:16:26:33 +0000] "POST /api/auth/login HTTP/1.1" 500 58 "-" "-"
+[2025-03-19 21:56:33] INFO: ::ffff:127.0.0.1 - - [19/Mar/2025:16:26:33 +0000] "GET /api/auth HTTP/1.1" 200 154 "-" "-"
+[2025-03-19 21:58:55] ERROR: This password is not matched on current email.
+[2025-03-19 21:58:55] ERROR: Error: This password is not matched on current email.
+[2025-03-19 21:58:55] INFO: ::ffff:127.0.0.1 - - [19/Mar/2025:16:28:55 +0000] "POST /api/auth/login HTTP/1.1" 500 58 "-" "-"
+[2025-03-19 21:58:55] INFO: ::ffff:127.0.0.1 - - [19/Mar/2025:16:28:55 +0000] "GET /api/auth HTTP/1.1" 200 154 "-" "-"
+[2025-03-19 21:59:01] ERROR: This password is not matched on current email.
+[2025-03-19 21:59:01] ERROR: Error: This password is not matched on current email.
+[2025-03-19 21:59:01] INFO: ::ffff:127.0.0.1 - - [19/Mar/2025:16:29:01 +0000] "POST /api/auth/login HTTP/1.1" 500 58 "-" "-"
+[2025-03-19 21:59:01] INFO: ::ffff:127.0.0.1 - - [19/Mar/2025:16:29:01 +0000] "GET /api/auth HTTP/1.1" 200 154 "-" "-"
+[2025-03-19 21:59:26] ERROR: This password is not matched on current email.
+[2025-03-19 21:59:26] ERROR: Error: This password is not matched on current email.
+[2025-03-19 21:59:26] INFO: ::ffff:127.0.0.1 - - [19/Mar/2025:16:29:26 +0000] "POST /api/auth/login HTTP/1.1" 500 58 "-" "-"
+[2025-03-19 21:59:26] INFO: ::ffff:127.0.0.1 - - [19/Mar/2025:16:29:26 +0000] "GET /api/auth HTTP/1.1" 200 154 "-" "-"
+[2025-03-19 22:00:29] INFO: ::ffff:127.0.0.1 - - [19/Mar/2025:16:30:29 +0000] "POST /api/auth/create HTTP/1.1" 200 146 "-" "-"
+[2025-03-19 22:00:29] ERROR: This password is not matched on current email.
+[2025-03-19 22:00:29] ERROR: Error: This password is not matched on current email.
+[2025-03-19 22:00:29] INFO: ::ffff:127.0.0.1 - - [19/Mar/2025:16:30:29 +0000] "POST /api/auth/login HTTP/1.1" 500 58 "-" "-"
+[2025-03-19 22:00:29] INFO: ::ffff:127.0.0.1 - - [19/Mar/2025:16:30:29 +0000] "GET /api/auth HTTP/1.1" 200 154 "-" "-"
+[2025-03-19 22:00:58] INFO: ::ffff:127.0.0.1 - - [19/Mar/2025:16:30:58 +0000] "POST /api/auth/create HTTP/1.1" 200 146 "-" "-"
+[2025-03-19 22:00:58] ERROR: This password is not matched on current email.
+[2025-03-19 22:00:58] ERROR: Error: This password is not matched on current email.
+[2025-03-19 22:00:58] INFO: ::ffff:127.0.0.1 - - [19/Mar/2025:16:30:58 +0000] "POST /api/auth/login HTTP/1.1" 500 58 "-" "-"
+[2025-03-19 22:00:58] INFO: ::ffff:127.0.0.1 - - [19/Mar/2025:16:30:58 +0000] "GET /api/auth HTTP/1.1" 200 154 "-" "-"
+[2025-03-19 22:01:27] INFO: ::ffff:127.0.0.1 - - [19/Mar/2025:16:31:27 +0000] "POST /api/auth/create HTTP/1.1" 200 146 "-" "-"
+[2025-03-19 22:01:27] ERROR: This password is not matched on current email.
+[2025-03-19 22:01:27] ERROR: Error: This password is not matched on current email.
+[2025-03-19 22:01:27] INFO: ::ffff:127.0.0.1 - - [19/Mar/2025:16:31:27 +0000] "POST /api/auth/login HTTP/1.1" 500 58 "-" "-"
+[2025-03-19 22:01:27] INFO: ::ffff:127.0.0.1 - - [19/Mar/2025:16:31:27 +0000] "GET /api/auth HTTP/1.1" 200 154 "-" "-"
+[2025-03-19 22:01:36] INFO: ::ffff:127.0.0.1 - - [19/Mar/2025:16:31:36 +0000] "POST /api/auth/create HTTP/1.1" 200 146 "-" "-"
+[2025-03-19 22:01:36] ERROR: This password is not matched on current email.
+[2025-03-19 22:01:36] ERROR: Error: This password is not matched on current email.
+[2025-03-19 22:01:36] INFO: ::ffff:127.0.0.1 - - [19/Mar/2025:16:31:36 +0000] "POST /api/auth/login HTTP/1.1" 500 58 "-" "-"
+[2025-03-19 22:01:36] INFO: ::ffff:127.0.0.1 - - [19/Mar/2025:16:31:36 +0000] "GET /api/auth HTTP/1.1" 200 154 "-" "-"
+[2025-03-19 22:02:37] INFO: ::ffff:127.0.0.1 - - [19/Mar/2025:16:32:37 +0000] "POST /api/auth/create HTTP/1.1" 200 146 "-" "-"
+[2025-03-19 22:02:37] ERROR: This password is not matched on current email.
+[2025-03-19 22:02:37] ERROR: Error: This password is not matched on current email.
+[2025-03-19 22:02:37] INFO: ::ffff:127.0.0.1 - - [19/Mar/2025:16:32:37 +0000] "POST /api/auth/login HTTP/1.1" 500 58 "-" "-"
+[2025-03-19 22:02:37] INFO: ::ffff:127.0.0.1 - - [19/Mar/2025:16:32:37 +0000] "GET /api/auth HTTP/1.1" 200 154 "-" "-"
