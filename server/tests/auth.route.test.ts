@@ -28,8 +28,13 @@ vi.mock("@prisma/client", () => {
       ]),
       create: vi.fn().mockImplementation((data) =>
         Promise.resolve({
-          id: "1",
-          ...data.data,
+          id: 1,
+          name: "Aravinth",
+          email: "anthu1510@gmail.com",
+          password: "sha1$53904499$1$0ad63d2917f1a99757089287196b67dfe3a17893",
+          status: "active",
+          createdAt: "2025-03-17T14:53:20.455Z",
+          updatedAt: "2025-03-17T14:53:20.455Z",
         })
       ),
       findUnique: vi.fn().mockImplementation(({ where }) => {
@@ -70,46 +75,65 @@ describe("Auth API", () => {
       .mockReturnValue(
         "sha1$53904499$1$0ad63d2917f1a99757089287196b67dfe3a17893"
       );
-    console.log(`generateSpy: ${generateSpy}`);
 
-    //vi.mock("password-hash", { spy: true });
-    // const spy = vi
-    //   .spyOn("password-hash", "generate")
-    //   .mockImplementation(
-    //     () => "sha1$53904499$1$0ad63d2917f1a99757089287196b67dfe3a17893"
-    //   );
     const response = await request(app)
       .post("/api/auth/create")
       .send(mockNewUser);
     expect(generateSpy).toHaveBeenCalledWith("12345");
     expect(response.status).toBe(200);
-    expect(response.body).toHaveProperty("id", "1");
+    expect(response.body).toHaveProperty("id", 1);
     expect(prisma.users.create).toHaveBeenCalledWith({
       data: {
         ...mockNewUser,
         password: "sha1$53904499$1$0ad63d2917f1a99757089287196b67dfe3a17893",
       },
+      omit: { password: true },
     });
-    // const { password: _, ...withOutPasswordUser } = mockNewUser;
-    // expect(response.body).toEqual({ id: "1", ...withOutPasswordUser });
+    const responseDateMock = {
+      createdAt: "2025-03-17T14:53:20.455Z",
+      updatedAt: "2025-03-17T14:53:20.455Z",
+    };
+    const { password: _, ...withOutPasswordUser } = mockNewUser;
+    expect(response.body).toEqual({
+      id: 1,
+      ...withOutPasswordUser,
+      ...responseDateMock,
+      password: "sha1$53904499$1$0ad63d2917f1a99757089287196b67dfe3a17893",
+    });
+    generateSpy.mockRestore();
   });
 
   test("should login the user", async () => {
     const mockLogin = { email: "anthu1510@gmail.com", password: "12345" };
 
+    const verifySpy = vi
+      .spyOn(pwdHash, "verify")
+      .mockImplementation((password: string, hashedPassword: string) => {
+        return (
+          password === mockLogin.password &&
+          hashedPassword ===
+            "sha1$53904499$1$0ad63d2917f1a99757089287196b67dfe3a17893"
+        );
+      });
+
     const response = await request(app).post("/api/auth/login").send(mockLogin);
+    expect(verifySpy).toHaveBeenCalledWith(
+      mockLogin.password,
+      expect.any(String)
+    );
+    // expect(response.status).toBe(200);
+    expect(response.body).toEqual({
+      success: true,
+      accessToken: expect.any(String), // Matches any string (JWT is always a string)
+      refreshToken: expect.any(String),
+    });
 
     expect(prisma.users.findUnique).toHaveBeenCalledTimes(1);
     expect(prisma.users.findUnique).toHaveBeenCalledWith({
       where: { email: mockLogin.email },
     });
 
-    expect(response.status).toBe(200);
-    expect(response.body).toEqual({
-      success: true,
-      accessToken: expect.any(String), // Matches any string (JWT is always a string)
-      refreshToken: expect.any(String),
-    });
+    verifySpy.mockRestore();
   });
 
   test("should get all the users", async () => {
