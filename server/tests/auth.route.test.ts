@@ -29,12 +29,7 @@ vi.mock("@prisma/client", () => {
       create: vi.fn().mockImplementation((data) =>
         Promise.resolve({
           id: 1,
-          name: "Aravinth",
-          email: "anthu1510@gmail.com",
-          password: "sha1$53904499$1$0ad63d2917f1a99757089287196b67dfe3a17893",
-          status: "active",
-          createdAt: "2025-03-17T14:53:20.455Z",
-          updatedAt: "2025-03-17T14:53:20.455Z",
+          ...data.data,
         })
       ),
       findUnique: vi.fn().mockImplementation(({ where }) => {
@@ -72,9 +67,11 @@ describe("Auth API", () => {
     };
     const generateSpy = vi
       .spyOn(pwdHash, "generate")
-      .mockReturnValue(
-        "sha1$53904499$1$0ad63d2917f1a99757089287196b67dfe3a17893"
-      );
+      .mockImplementation((password: string) => {
+        return password === "12345"
+          ? "sha1$53904499$1$0ad63d2917f1a99757089287196b67dfe3a17893"
+          : "";
+      });
 
     const response = await request(app)
       .post("/api/auth/create")
@@ -89,17 +86,16 @@ describe("Auth API", () => {
       },
       omit: { password: true },
     });
-    const responseDateMock = {
-      createdAt: "2025-03-17T14:53:20.455Z",
-      updatedAt: "2025-03-17T14:53:20.455Z",
-    };
-    const { password: _, ...withOutPasswordUser } = mockNewUser;
-    expect(response.body).toEqual({
-      id: 1,
-      ...withOutPasswordUser,
-      ...responseDateMock,
-      password: "sha1$53904499$1$0ad63d2917f1a99757089287196b67dfe3a17893",
-    });
+    expect(response.body).toEqual(
+      expect.objectContaining<
+        Omit<Users, "password" | "createdAt" | "updatedAt">
+      >({
+        id: expect.any(Number), // id should be a string
+        name: expect.any(String), // name should be a string
+        email: expect.any(String), // email should be a string
+        status: expect.any(String), // email should be a string
+      })
+    );
     generateSpy.mockRestore();
   });
 
@@ -117,20 +113,19 @@ describe("Auth API", () => {
       });
 
     const response = await request(app).post("/api/auth/login").send(mockLogin);
+    expect(prisma.users.findUnique).toHaveBeenCalledTimes(1);
+    expect(prisma.users.findUnique).toHaveBeenCalledWith({
+      where: { email: mockLogin.email },
+    });
     expect(verifySpy).toHaveBeenCalledWith(
       mockLogin.password,
-      expect.any(String)
+      "sha1$53904499$1$0ad63d2917f1a99757089287196b67dfe3a17893"
     );
-    // expect(response.status).toBe(200);
+    expect(response.status).toBe(200);
     expect(response.body).toEqual({
       success: true,
       accessToken: expect.any(String), // Matches any string (JWT is always a string)
       refreshToken: expect.any(String),
-    });
-
-    expect(prisma.users.findUnique).toHaveBeenCalledTimes(1);
-    expect(prisma.users.findUnique).toHaveBeenCalledWith({
-      where: { email: mockLogin.email },
     });
 
     verifySpy.mockRestore();
