@@ -1,7 +1,7 @@
 import { NextFunction, Request, Response } from "express";
 import { db } from "../db";
 import { generateAccessToken, generateRefreshToken } from "../utils/jwt";
-import { LoginResponse } from "../../prisma/interfaces";
+import { LoginResponse } from "../types";
 import logger from "../config/logger";
 import pwdHash from "password-hash";
 

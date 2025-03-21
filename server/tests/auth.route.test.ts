@@ -1,31 +1,15 @@
-import { expect, test, vi, describe, beforeEach } from "vitest";
+import { expect, test, vi, describe } from "vitest";
 import request from "supertest";
+import { findManyMockData } from "./mocks/auth.mock.data";
 import { PrismaClient } from "@prisma/client";
 import app from "../src/app";
 import type { Users } from "@prisma/client";
 import pwdHash from "password-hash";
 
-vi.mock("../src/config/env", () => ({
-  env: {
-    NODE_ENV: "test",
-    ACCESS_TOKEN_SECRET: "test_secret",
-    REFRESH_TOKEN_SECRET: "test_refresh_secret",
-  },
-}));
-
 vi.mock("@prisma/client", () => {
   const mockPrisma = {
     users: {
-      findMany: vi.fn().mockResolvedValue([
-        {
-          id: 1,
-          name: "Aravinth",
-          email: "anthu1510@gmail.com",
-          status: "active",
-          createdAt: "2025-03-17T14:53:20.455Z",
-          updatedAt: "2025-03-17T14:53:20.455Z",
-        },
-      ]),
+      findMany: vi.fn().mockResolvedValue(findManyMockData),
       create: vi.fn().mockImplementation((data) =>
         Promise.resolve({
           id: 1,
@@ -38,7 +22,8 @@ vi.mock("@prisma/client", () => {
             id: 1,
             name: "Aravinth",
             email: "anthu1510@gmail.com",
-            password: "12345",
+            password:
+              "sha1$53904499$1$0ad63d2917f1a99757089287196b67dfe3a17893",
             status: "active",
             createdAt: "2025-03-17T14:53:20.455Z",
             updatedAt: "2025-03-17T14:53:20.455Z",
@@ -54,10 +39,6 @@ vi.mock("@prisma/client", () => {
 const prisma = new PrismaClient();
 
 describe("Auth API", () => {
-  beforeEach(() => {
-    vi.clearAllMocks();
-  });
-
   test("should create a new user", async () => {
     const mockNewUser = {
       name: "Aravinth",
@@ -104,13 +85,15 @@ describe("Auth API", () => {
 
     const verifySpy = vi
       .spyOn(pwdHash, "verify")
-      .mockImplementation((password: string, hashedPassword: string) => {
-        return (
-          password === mockLogin.password &&
-          hashedPassword ===
-            "sha1$53904499$1$0ad63d2917f1a99757089287196b67dfe3a17893"
-        );
-      });
+      .mockImplementation(
+        (password: string, hashedPassword: string): boolean => {
+          return (
+            password === "12345" &&
+            hashedPassword ===
+              "sha1$53904499$1$0ad63d2917f1a99757089287196b67dfe3a17893"
+          );
+        }
+      );
 
     const response = await request(app).post("/api/auth/login").send(mockLogin);
     expect(prisma.users.findUnique).toHaveBeenCalledTimes(1);
@@ -121,6 +104,13 @@ describe("Auth API", () => {
       mockLogin.password,
       "sha1$53904499$1$0ad63d2917f1a99757089287196b67dfe3a17893"
     );
+
+    const result = pwdHash.verify(
+      mockLogin.password,
+      "sha1$53904499$1$0ad63d2917f1a99757089287196b67dfe3a17893"
+    );
+
+    expect(result).toBe(true);
     expect(response.status).toBe(200);
     expect(response.body).toEqual({
       success: true,
@@ -132,15 +122,6 @@ describe("Auth API", () => {
   });
 
   test("should get all the users", async () => {
-    const mockResponse = {
-      id: 1,
-      name: "Aravinth",
-      email: "anthu1510@gmail.com",
-      password: "12345",
-      status: "active",
-      createdAt: "2025-03-17T14:53:20.455Z",
-      updatedAt: "2025-03-17T14:53:20.455Z",
-    };
     const response = await request(app).get("/api/auth");
     expect(response.status).toBe(200);
     expect(response.body).toBeInstanceOf(Array);
