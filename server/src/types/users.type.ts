@@ -1,14 +1,4 @@
-export interface Users {
-  id: number;
-  name: string;
-  email: string;
-  password: string;
-  status: string;
-  createdAt: Date;
-  updatedAt: Date;
-}
-
-export type LoginResponse = {
+export type TLoginResponse = {
   success: boolean;
   accessToken: string;
   refreshToken: string;

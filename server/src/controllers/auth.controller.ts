@@ -1,7 +1,7 @@
 import { NextFunction, Request, Response } from "express";
 import { db } from "../db";
-import { generateAccessToken, generateRefreshToken } from "../utils/jwt";
-import { LoginResponse } from "../types";
+import { generateTokens } from "../utils/jwt";
+import { TLoginResponse } from "../types";
 import logger from "../config/logger";
 import pwdHash from "password-hash";
 
@@ -21,7 +21,7 @@ class AuthController {
       }
     }
   }
-  async login(req: Request, res: Response<LoginResponse>, next: NextFunction) {
+  async login(req: Request, res: Response<TLoginResponse>, next: NextFunction) {
     try {
       const { email, password } = req.body;
       const currentUser = await db.users.findUnique({ where: { email } });
@@ -35,8 +35,7 @@ class AuthController {
       }
       const loginResponse = {
         success: true,
-        accessToken: generateAccessToken({ userId: currentUser?.id }),
-        refreshToken: generateRefreshToken({ userId: currentUser?.id }),
+        ...generateTokens({ userId: currentUser?.id }),
       };
       logger.info("login users");
       res.json(loginResponse);
@@ -51,6 +50,23 @@ class AuthController {
     try {
       const users = await db.users.findMany({ omit: { password: true } });
       res.json(users);
+    } catch (error) {
+      if (error instanceof Error) {
+        logger.error({ message: error.message });
+        next(error); // Pass error to middleware
+      }
+    }
+  }
+
+  async refreskToken(
+    req: Request<{ refreshToken: string }>,
+    res: Response,
+    next: NextFunction
+  ) {
+    try {
+      // const users = await db.users.findMany({ omit: { password: true } });
+      // res.json(users);
+      const { refreshToken } = req.body;
     } catch (error) {
       if (error instanceof Error) {
         logger.error({ message: error.message });
