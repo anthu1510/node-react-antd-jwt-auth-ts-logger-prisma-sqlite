@@ -3,3 +3,8 @@ export type TLoginResponse = {
   accessToken: string;
   refreshToken: string;
 };
+
+export type TLogin = {
+  email: string;
+  password: string;
+};

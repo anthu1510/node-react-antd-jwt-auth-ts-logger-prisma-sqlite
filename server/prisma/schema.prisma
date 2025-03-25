@@ -12,7 +12,7 @@ datasource db {
 
 generator zod {
  provider       = "zod-prisma-types"
- output = "../src/schemas"
+ output = "../src/schemas/generated"
  addInputTypeValidation = false
  modelCase         = "PascalCase"
  outputType        = "zod"
@@ -42,7 +42,7 @@ generator zod {
 // }
 
 model Users {
-  id Int @id @default(autoincrement())
+ id    String   @id @default(uuid())
   name String /// @zod.string.min(1)
   email String /// @zod.string.min(1)
   password String /// @zod.string.min(1)

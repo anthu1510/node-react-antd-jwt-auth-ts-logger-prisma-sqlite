@@ -2,7 +2,6 @@ import { Router } from "express";
 import { validateRequest } from "zod-express-middleware";
 import authController from "../controllers/auth.controller";
 import { LoginSchema, UsersCreateInputSchema } from "../schemas";
-import { LoginResponse } from "../types";
 
 const authRouter = Router();
 

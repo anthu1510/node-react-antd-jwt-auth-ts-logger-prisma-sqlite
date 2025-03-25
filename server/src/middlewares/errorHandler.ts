@@ -47,7 +47,7 @@
 // export default errorHandler;
 
 import { Request, Response, NextFunction } from "express";
-import { BAD_REQUEST, INTERNAL_SERVER_ERROR } from "../constants/http";
+import { INTERNAL_SERVER_ERROR } from "../constants/http";
 import logger from "../config/logger";
 
 // Custom Error Interface

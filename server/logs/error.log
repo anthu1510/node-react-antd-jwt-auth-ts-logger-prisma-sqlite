@@ -204,3 +204,21 @@ Unique constraint failed on the fields: (`email`)
 [2025-03-21 17:20:18] ERROR: Error: This password is not matched on current email.
 [2025-03-21 17:22:19] ERROR: This password is not matched on current email.
 [2025-03-21 17:22:19] ERROR: Error: This password is not matched on current email.
+[2025-03-25 22:16:41] ERROR: 
+Invalid `db.users.create()` invocation in
+D:\Aravinth\projects\Node-React\node-react-jwt-auth-ts\server\src\controllers\auth.controller.ts:12:35
+
+   9 async create(req: Request, res: Response, next: NextFunction) {
+  10   try {
+  11     const hashedPassword = pwdHash.generate(req.body.password);
+→ 12     const user = await db.users.create(
+Unique constraint failed on the fields: (`email`)
+[2025-03-25 22:16:41] ERROR: Error: 
+Invalid `db.users.create()` invocation in
+D:\Aravinth\projects\Node-React\node-react-jwt-auth-ts\server\src\controllers\auth.controller.ts:12:35
+
+   9 async create(req: Request, res: Response, next: NextFunction) {
+  10   try {
+  11     const hashedPassword = pwdHash.generate(req.body.password);
+→ 12     const user = await db.users.create(
+Unique constraint failed on the fields: (`email`)

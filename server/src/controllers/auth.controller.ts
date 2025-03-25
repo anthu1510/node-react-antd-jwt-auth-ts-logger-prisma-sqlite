@@ -58,22 +58,22 @@ class AuthController {
     }
   }
 
-  async refreskToken(
-    req: Request<{ refreshToken: string }>,
-    res: Response,
-    next: NextFunction
-  ) {
-    try {
-      // const users = await db.users.findMany({ omit: { password: true } });
-      // res.json(users);
-      const { refreshToken } = req.body;
-    } catch (error) {
-      if (error instanceof Error) {
-        logger.error({ message: error.message });
-        next(error); // Pass error to middleware
-      }
-    }
-  }
+  // async refreskToken(
+  //   req: Request<{ refreshToken: string }>,
+  //   res: Response,
+  //   next: NextFunction
+  // ) {
+  //   try {
+  //     // const users = await db.users.findMany({ omit: { password: true } });
+  //     // res.json(users);
+  //     const { refreshToken } = req.body;
+  //   } catch (error) {
+  //     if (error instanceof Error) {
+  //       logger.error({ message: error.message });
+  //       next(error); // Pass error to middleware
+  //     }
+  //   }
+  // }
 }
 
 export default new AuthController();

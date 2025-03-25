@@ -1,4 +1,4 @@
-export type TokenPayload = { userId: number };
+export type TokenPayload = { userId: string };
 
 export type GenerateToken = (payload: TokenPayload) => string;
 

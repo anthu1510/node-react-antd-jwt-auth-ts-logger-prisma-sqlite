@@ -6,6 +6,7 @@
     "dev": "tsnd --respawn ./src/",
     "build": "tsc",
     "db": "npx prisma migrate dev --name init",
+    "db1": "npx prisma migrate reset",
     "generate": "npx prisma generate",
     "test": "vitest",
     "coverage": "vitest run --coverage"

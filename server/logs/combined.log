@@ -637,3 +637,30 @@ Unique constraint failed on the fields: (`email`)
 [2025-03-24 17:09:29] INFO: 🚀 Server is running on http://localhost:5000
 [2025-03-24 17:21:48] INFO: 🚀 Server is running on http://localhost:5000
 [2025-03-24 22:21:46] INFO: 🚀 Server is running on http://localhost:5000
+[2025-03-25 22:16:18] INFO: 🚀 Server is running on http://localhost:5000
+[2025-03-25 22:16:41] ERROR: 
+Invalid `db.users.create()` invocation in
+D:\Aravinth\projects\Node-React\node-react-jwt-auth-ts\server\src\controllers\auth.controller.ts:12:35
+
+   9 async create(req: Request, res: Response, next: NextFunction) {
+  10   try {
+  11     const hashedPassword = pwdHash.generate(req.body.password);
+→ 12     const user = await db.users.create(
+Unique constraint failed on the fields: (`email`)
+[2025-03-25 22:16:41] ERROR: Error: 
+Invalid `db.users.create()` invocation in
+D:\Aravinth\projects\Node-React\node-react-jwt-auth-ts\server\src\controllers\auth.controller.ts:12:35
+
+   9 async create(req: Request, res: Response, next: NextFunction) {
+  10   try {
+  11     const hashedPassword = pwdHash.generate(req.body.password);
+→ 12     const user = await db.users.create(
+Unique constraint failed on the fields: (`email`)
+[2025-03-25 22:16:41] INFO: ::ffff:127.0.0.1 - - [25/Mar/2025:16:46:41 +0000] "POST /api/auth/create HTTP/1.1" 500 422 "-" "Keyrunner"
+[2025-03-25 22:17:50] INFO: ::ffff:127.0.0.1 - - [25/Mar/2025:16:47:50 +0000] "POST /api/auth/create HTTP/1.1" 200 189 "-" "Keyrunner"
+[2025-03-25 22:27:18] INFO: 🚀 Server is running on http://localhost:5000
+[2025-03-25 22:27:38] INFO: ::ffff:127.0.0.1 - - [25/Mar/2025:16:57:38 +0000] "POST /api/auth/create HTTP/1.1" 200 189 "-" "Keyrunner"
+[2025-03-25 22:28:37] INFO: login users
+[2025-03-25 22:28:37] INFO: ::ffff:127.0.0.1 - - [25/Mar/2025:16:58:37 +0000] "POST /api/auth/login HTTP/1.1" 200 389 "-" "Keyrunner"
+[2025-03-25 22:29:31] INFO: 🚀 Server is running on http://localhost:5000
+[2025-03-25 22:30:47] INFO: 🚀 Server is running on http://localhost:5000
