@@ -4,6 +4,7 @@ import { generateTokens } from "../utils/jwt";
 import { TLoginResponse } from "../types";
 import logger from "../config/logger";
 import pwdHash from "password-hash";
+import jwt from "jsonwebtoken";
 
 class AuthController {
   async create(req: Request, res: Response, next: NextFunction) {
@@ -58,22 +59,20 @@ class AuthController {
     }
   }
 
-  // async refreskToken(
-  //   req: Request<{ refreshToken: string }>,
-  //   res: Response,
-  //   next: NextFunction
-  // ) {
-  //   try {
-  //     // const users = await db.users.findMany({ omit: { password: true } });
-  //     // res.json(users);
-  //     const { refreshToken } = req.body;
-  //   } catch (error) {
-  //     if (error instanceof Error) {
-  //       logger.error({ message: error.message });
-  //       next(error); // Pass error to middleware
-  //     }
-  //   }
-  // }
+  async refreskToken(
+    req: Request<{ refreshToken: string }>,
+    res: Response,
+    next: NextFunction
+  ) {
+    try {
+      const { refreshToken } = req.body;
+    } catch (error) {
+      if (error instanceof Error) {
+        logger.error({ message: error.message });
+        next(error); // Pass error to middleware
+      }
+    }
+  }
 }
 
 export default new AuthController();

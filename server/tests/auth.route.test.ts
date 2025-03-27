@@ -1,10 +1,13 @@
 import { expect, test, vi, describe } from "vitest";
 import request from "supertest";
-import { findManyMockData } from "./mocks/auth.mock.data";
+import {
+  findManyMockData,
+  findUniqueUserMockData,
+} from "./mocks/auth.mock.data";
 import { PrismaClient } from "@prisma/client";
 import app from "../src/app";
-import type { Users } from "@prisma/client";
 import pwdHash from "password-hash";
+import type { TFindManyUsers, TCreateUserResponse } from "../src/types";
 
 vi.mock("@prisma/client", () => {
   const mockPrisma = {
@@ -12,22 +15,13 @@ vi.mock("@prisma/client", () => {
       findMany: vi.fn().mockResolvedValue(findManyMockData),
       create: vi.fn().mockImplementation((data) =>
         Promise.resolve({
-          id: 1,
-          ...data.data,
+          id: "96ef1f9c-d73b-47cd-a589-756b78dac4d8",
+          ...(({ password, ...rest }) => rest)(data.data),
         })
       ),
       findUnique: vi.fn().mockImplementation(({ where }) => {
         if (where.email === "anthu1510@gmail.com") {
-          return Promise.resolve({
-            id: 1,
-            name: "Aravinth",
-            email: "anthu1510@gmail.com",
-            password:
-              "sha1$53904499$1$0ad63d2917f1a99757089287196b67dfe3a17893",
-            status: "active",
-            createdAt: "2025-03-17T14:53:20.455Z",
-            updatedAt: "2025-03-17T14:53:20.455Z",
-          });
+          return Promise.resolve(findUniqueUserMockData);
         }
         return Promise.resolve(null);
       }),
@@ -59,7 +53,6 @@ describe("Auth API", () => {
       .send(mockNewUser);
     expect(generateSpy).toHaveBeenCalledWith("12345");
     expect(response.status).toBe(200);
-    expect(response.body).toHaveProperty("id", 1);
     expect(prisma.users.create).toHaveBeenCalledWith({
       data: {
         ...mockNewUser,
@@ -68,13 +61,11 @@ describe("Auth API", () => {
       omit: { password: true },
     });
     expect(response.body).toEqual(
-      expect.objectContaining<
-        Omit<Users, "password" | "createdAt" | "updatedAt">
-      >({
-        id: expect.any(Number), // id should be a string
+      expect.objectContaining<TCreateUserResponse>({
+        id: expect.any(String), // id should be a string
         name: expect.any(String), // name should be a string
         email: expect.any(String), // email should be a string
-        status: expect.any(String), // email should be a string
+        status: expect.any(String), // status should be a string
       })
     );
     generateSpy.mockRestore();
@@ -128,8 +119,8 @@ describe("Auth API", () => {
 
     expect(response.body).toEqual(
       expect.arrayContaining([
-        expect.objectContaining<Omit<Users, "password">>({
-          id: expect.any(Number), // id should be a string
+        expect.objectContaining<TFindManyUsers>({
+          id: expect.any(String), // id should be a string
           name: expect.any(String), // name should be a string
           email: expect.any(String), // email should be a string
           status: expect.any(String), // email should be a string
